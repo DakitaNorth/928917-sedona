@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Даниил](https://up.htmlacademy.ru/htmlcss/23/user/928917).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Байдаров](https://htmlacademy.ru/profile/4er)
 
 ---
 
