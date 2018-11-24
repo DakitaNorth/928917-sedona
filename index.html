@@ -37,7 +37,7 @@
     </section>
   </main>
   <footer class="main_footer">
-    <a href="#" class="#" >
+    <a href="#" class="#">
       #VISITSEDONA
     </a>
     <div class="footer_social">
@@ -55,22 +55,21 @@
   </footer>
   <section class="modal_window">
     <h2>Поиск гостиницы в Седоне</h2>
-    <span class="arrival_data">
-      Дата заезда:
-    </span>
-    <!-- Здесь будет форма -->
-    <span class="departure_data">
-      Дата выезда:
-    </span>
-    <!-- Здесь будет форма -->
-    <span class="grownup_form">
-      Взрослые:
-    </span>
-    <!-- Здесь будет форма -->
-    <span class="child_form">
-      Дети:
-    </span>
-    <!-- Здесь будет форма -->
+    <form action="#" method="get">
+      <fieldset class="modal_form">
+        <label for="arrival_data_form ">Дата заезда:</label>
+        <input type="date" name="arrival_data" id="arrival_data_form"><br>
+        <label for="departure_data_form">Дата выезда:</label>
+        <input type="date" name="departure_data" id="departure_data_form"><br>
+        <label for="grownup_form">Взрослые:</label>
+        <input type="number" min="0" max="10" name="grownup" id="grownup_form"><br>
+        <label for="child_form">Дети:</label>
+        <input type="number" min="0" max="10" name="child" id="child_form"><br>
+        <button class="search" type="submit">
+          Найти
+        </button>
+      </fieldset>
+    </form>
   </section>
   </body>
 </html>
