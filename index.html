@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main_header">
     <nav class="main_navigation">
-          <img src="img/index-logo.svg" alt="Логотип городка Седона">
+          <img src="img/index-logo.svg" alt="Логотип городка Седона" width="auto" height="72px">
       <ul class="site_navigation">
         <li class="site_navigation_active"><a href="info.html" >Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
@@ -19,13 +22,14 @@
   <main class="main_info">
     <section class="welcome">
       <h1 class="hidden">Sedona</h1>
-      <img src="img/welcome.svg" alt="Надписи">
-      <img src="img/polygon.jpg" alt="Фон">
+      <img src="img/welcome.svg" alt="Надписи" width="459px" height="auto">
+      <img src="img/polygon.jpg" alt="Фон"  width="1200px" height="auto">
     </section>
     <section class="reasons">
-      <b>Седона - небольшой городок в Аризоне,заслуживающий большего!</b>
+      <b>Седона - небольшой городок в Аризоне,<br>
+        заслуживающий большего!</b>
       <p class="reasons_list">
-        Рассмотрим 5 причин,по которым Седона круче,чем Гранд Каньон
+        Рассмотрим 5 причин,по которым Седона круче,чем Гранд Каньон!
       </p>
     </section>
     <section class="interesting">
@@ -37,9 +41,11 @@
     </section>
   </main>
   <footer class="main_footer">
-    <a href="#" class="#">
-      #VISITSEDONA
-    </a>
+    <div class="hesh">
+      <a href="#" class="#">
+        #VISITSEDONA
+      </a>
+    </div>
     <div class="footer_social">
       <ul>
           <li><a class="social_button" href="#">Twitter</a></li>
@@ -49,53 +55,69 @@
     </div>
     <p class="footer_copyright">
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright_link">
-        <img src="№" alt="Разработано HTML-ACADEMY">
+        <img src="img/logo_name.png" alt="Разработано HTML-ACADEMY">
       </a>
     </p>
   </footer>
   <section class="modal_window">
-    <h2>Поиск гостиницы в Седоне</h2>
+    <button class="brown_button" type="button">
+      Поиск гостиницы в Седоне
+    </button>
     <form action="#" method="get">
       <fieldset class="modal_form">
         <p>
-          <label for="arrival_data_form ">Дата заезда:</label>
-          <input type="date" name="arrival_data" id="arrival_data_form" placeholder="24 АПРЕЛЯ 2017 ">
+          <label for="data_form ">Дата заезда:</label>
+          <input type="date" name="arrival_data" id="data_form" placeholder="24 АПРЕЛЯ 2017 ">
           <button type="button" class="calendar">
-            <img src="img/calendar.svg">
+            <img src="img/calendar.png">
           </button>
         </p>
         <p>
-          <label for="departure_data_form">Дата выезда:</label>
-          <input type="date" name="departure_data" id="departure_data_form" placeholder="4 ИЮЛЯ 2017">
+          <label for="data_form">Дата выезда:</label>
+          <input type="date" name="departure_data" id="data_form" placeholder="4 ИЮЛЯ 2017">
           <button type="button" class="calendar">
-            <img src="img/calendar.svg">
+            <img src="img/calendar.png">
           </button>
         </p>
         <p>
           <label for="grownup_form">Взрослые:</label>
           <button type="button">
-            <img src="img/minus.svg" alt="Минус">
+            <img src="img/minus.png" alt="Минус">
           </button>
           <input type="number" min="0" max="10" name="grownup" id="grownup_form" placeholder="2">
           <button type="button">
-            <img src="img/plus.svg" alt="Плюс">
+            <img src="img/plus.png" alt="Плюс">
           </button>
           <label for="child_form">Дети:</label>
           <button type="button">
-            <img src="img/minus.svg" alt="Минус">
+            <img src="img/minus.png" alt="Минус">
           </button>
           <input type="number" min="0" max="10" name="child" id="child_form" placeholder="0">
           <button type="button">
-            <img src="img/plus.svg" alt="Плюс">
+            <img src="img/plus.png" alt="Плюс">
           </button>
         </p>
         <p>
-          <button class="search" type="submit">
+          <button class="blue_button" type="submit">
             Найти
           </button>
         </p>
       </fieldset>
     </form>
+    <button class="modal-close" type="button">
+      Закрыть
+    </button>
   </section>
+<section class="modal_map">
+  <h2 class="hidden">
+    Как до нас добраться
+  </h2>
+  <p>
+    <img src="img/map.jpg" width="auto" height="750">
+  </p>
+  <button class="modal-close" type="button">
+    Закрыть
+  </button>
+</section>
   </body>
 </html>
