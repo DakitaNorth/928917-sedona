@@ -12,6 +12,8 @@ body {
   font-weight:normal;
   color:#000000;
   text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
 
   background-color:#f2f2f2;
 }
@@ -39,69 +41,90 @@ a {
 .site_navigation a:focus {
   color: #81b3d2;
 }
-/*Общие теги*/
 
-.hesh a {
+.focus_text a {
   color:black;
   font-size:21px;
   font-weight:700;
-  list-style: none;
-  text-decoration: none;
+
 }
-.hesh a:hover,
-.hesh a:focus {
+
+.focus_text a:hover,
+.focus_text a:focus {
   color: #81b3d2;
 }
-/*Общие теги*/
 
-.brown_button {
+.focus_text h2:active {
+  color:#b2b2b2;
+}
+
+.focus_text a:active {
+  color:#b2b2b2;
+}
+
+.button {
+  font-weight:700;
+  border: medium none;
+}
+
+.brown {
   color:#ffffff;
   background-color:#766357;
-  font-weight:700;
-  list-style: none;
-  text-decoration: none;
-  border: medium none;
 }
-.brown_button:hover,
-.brown_button:focus {
+
+.brown:hover,
+.brown:focus {
   background-color:#604e43;
 }
-/*Общие теги*/
-.blue_button {
+
+.brown:active {
+  background-color:#766357;
+  color:#857871;
+}
+
+.blue {
   color:#ffffff;
   background-color:#81b3d2;
-  font-weight:700;
-  list-style: none;
-  text-decoration: none;
-  border: medium none;
 }
-.blue_button:hover,
-.blue_button:focus {
+
+.blue:hover,
+.blue:focus {
   background-color:#669ec0;
 }
-/*Общие теги*/
+
+.blue:active {
+  background-color:#5496bd;
+  color:#88b6d1;
+}
+
 .footer_social {
   text-align: center;
 }
+
 .footer_social ul {
   list-style: none;
 }
+
 .social_button {
   color: black;
 }
+
 .footer_copyright {
   text-align: center;
 }
-/*Общие теги*/
+
 .main_footer {
   background-color:white;
 }
+
 .main_header {
   background-color:white;
 }
+
 .main_info {
   background-color:white;
 }
+
 /*Общие теги*/
 .other_page .site_navigation_active a {
   color:#766357;
