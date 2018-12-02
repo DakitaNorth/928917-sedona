@@ -7,10 +7,10 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="container">
   <header class="main_header">
-    <nav class="main_navigation">
-          <img src="img/index-logo.svg" alt="Логотип городка Седона" width="140" height="72">
+    <nav class="main_navigation ">
+    <img class="header_main_logo"src="img/index-logo.svg" alt="Логотип городка Седона">
       <ul class="site_navigation">
         <li class="site_navigation_active"><a href="info.html" >Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
@@ -22,8 +22,7 @@
   <main class="main_info">
     <section class="welcome">
       <h1 class="hidden">Sedona</h1>
-      <img src="img/welcome.svg" alt="Надписи" width="459" height="353">
-      <img src="img/polygon.jpg" alt="Фон"  width="1200" height="800">
+      <img class="welcome_inscription" src="img/welcome.svg" alt="Надписи" width="459" height="353">
     </section>
     <section class="reasons">
       <h2 class="hidden">Причины съезить в Седону</h2>
@@ -40,21 +39,24 @@
         И мы покажем вам лучшиепредложения гостиниц в Седоне
       </p>
     </section>
+    <section class="map">
+      <img src="img/map.jpg" alt="Карта,с отметкой местонахождения Седоны">
+    </section>
   </main>
   <footer class="main_footer">
-    <div class="focus_text">
+    <div class="focus_text footer_style_240">
       <a href="#" class="#">
         #VISITSEDONA
       </a>
     </div>
-    <div class="footer_social">
+    <div class="footer_social footer_style_400">
       <ul>
           <li><a class="social_button" href="#">Twitter</a></li>
           <li><a class="social_button" href="#">Facebook</a></li>
           <li><a class="social_button" href="#">Youtube</a></li>
       </ul>
     </div>
-    <p class="footer_copyright">
+    <p class="footer_copyright footer_style_240">
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright_link">
         <img src="img/logo_name.png" alt="Разработано HTML-ACADEMY">
       </a>
@@ -110,16 +112,5 @@
       Закрыть
     </button>
   </section>
-<section class="modal_map">
-  <h2 class="hidden">
-    Как до нас добраться
-  </h2>
-  <p>
-    <img src="img/map.jpg" width="1718" height="748" alt="Карта,с отметкой местонахождения Седоны">
-  </p>
-  <button class="modal-close" type="button">
-    Закрыть
-  </button>
-</section>
   </body>
 </html>
