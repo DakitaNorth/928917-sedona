@@ -252,14 +252,25 @@ a {
 }
 
 .interesting {
-  min-height:291px;
   width:100%;
   padding-top:55px;
+  margin-bottom:50px;
+}
+
+.map {
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
 }
 
 .map img {
   width:100%;
   min-height:472px;
+}
+.map button {
+  width:569px;
+  min-height:86px;
+  align-self:center;
 }
 
 .result {
@@ -299,17 +310,37 @@ a {
   list-style: none;
 }
 
-.name_detali_and_buttons .detail {
-  margin-top:12px;
-  margin-bottom:6px;
+.buttons_detail {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  align-items:flex-end;
+  margin-top:5px;
 }
 
-.detail_hotel {
-  margin-right:40px;
+.hotel_and_button a {
+  margin-top:9px;
+  width:110px;
+  min-height:27px;
+  text-align:center;
 }
 
-.buttons a {
-  margin-right:42px;
+.price_and_button a {
+  margin-top:9px;
+  width:142px;
+  min-height:27px;
+  text-align:center;
+}
+
+.price_and_button {
+  display:flex;
+  flex-direction:column;
+}
+
+.hotel_and_button {
+  display:flex;
+  flex-direction:column;
+  margin-right:7px;
 }
 
 .rating {
