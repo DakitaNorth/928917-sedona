@@ -7,69 +7,72 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="container">
-  <header class="main_header">
-    <nav class="main_navigation ">
-    <img class="header_main_logo"src="img/index-logo.svg" alt="Логотип городка Седона">
-      <ul class="site_navigation">
-        <li class="site_navigation_active"><a href="info.html" >Информация</a></li>
-        <li><a href="media.html">Фото и видео</a></li>
-        <li><a href="map.html">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main_info">
-    <section class="welcome">
-      <h1 class="hidden">Sedona</h1>
-      <img class="welcome_inscription" src="img/welcome.svg" alt="Надписи" width="459" height="353">
-    </section>
-    <section class="reasons">
-      <h2 class="hidden">Причины съезить в Седону</h2>
-      <b>Седона - небольшой городок в Аризоне,<br>
-        заслуживающий большего!</b>
-      <p class="reasons_list">
-        Рассмотрим 5 причин,по которым Седона круче,чем Гранд Каньон!
+  <body>
+  <div class="container">
+    <header class="main_header">
+      <nav class="main_navigation ">
+      <img class="header_main_logo"src="img/index-logo.svg" alt="Логотип городка Седона">
+        <ul class="site_navigation">
+          <li class="site_navigation_active"><a href="info.html" >Информация</a></li>
+          <li><a href="media.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main_info">
+      <section class="welcome">
+        <h1 class="hidden">Sedona</h1>
+        <img class="welcome_inscription" src="img/welcome.svg" alt="Надписи" width="459" height="353">
+      </section>
+      <section class="reasons">
+        <h2 class="hidden">Причины съезить в Седону</h2>
+        <b>Седона — небольшой городок в Аризоне,<br>
+          заслуживающий большего!</b>
+        <p class="reasons_list">
+          Рассмотрим 5 причин,по которым Седона круче,чем Гранд Каньон!
+        </p>
+      </section>
+      <section class="interesting">
+        <h2>Заинтересовались?</h2>
+        <p class="date_form">
+          Укажите предполагаемые даты поездки,<br>
+          И мы покажем вам лучшиепредложения гостиниц в Седоне
+        </p>
+      </section>
+      <section class="map">
+        <button class="brown button" type="button">
+          ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
+        </button>
+        <img src="img/map.jpg" alt="Карта,с отметкой местонахождения Седоны">
+      </section>
+    </main>
+    <footer class="main_footer">
+      <div class="focus_text footer_hashtag">
+        <a href="#" class="#" >
+          #VISITSEDONA
+        </a>
+      </div>
+      <div class="footer_social footer_style_400">
+              <a class="social_button icon-twitter" href="#">
+                <span class="hidden">Твиттер</span>
+            </a>
+              <a class="social_button icon-facebook" href="#">
+                <span class="hidden">Фейсбук</span>
+            </a>
+              <a class="social_button icon-youtube" href="#">
+                <span class="hidden">Ютуб</span>
+              </a>
+      </div>
+      <p class="footer_copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright_link">
+          <img src="img/logo_name.png" alt="Разработано HTML-ACADEMY">
+        </a>
       </p>
-    </section>
-    <section class="interesting">
-      <h2>Заинтересовались?</h2>
-      <p class="date_form">
-        Укажите предполагаемые даты поездки,<br>
-        И мы покажем вам лучшиепредложения гостиниц в Седоне
-      </p>
-    </section>
-    <section class="map">
-      <button class="brown button" type="button">
-        Поиск гостиницы в Седоне
-      </button>
-      <img src="img/map.jpg" alt="Карта,с отметкой местонахождения Седоны">
-    </section>
-  </main>
-  <footer class="main_footer">
-    <div class="focus_text footer_hashtag">
-      <a href="#" class="#" >
-        #VISITSEDONA
-      </a>
-    </div>
-    <div class="footer_social footer_style_400">
-      <ul>
-          <li><a class="social_button" href="#">Twitter</a></li>
-          <li><a class="social_button" href="#">Facebook</a></li>
-          <li><a class="social_button" href="#">Youtube</a></li>
-      </ul>
-    </div>
-    <p class="footer_copyright">
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright_link">
-        <img src="img/logo_name.png" alt="Разработано HTML-ACADEMY">
-      </a>
-    </p>
-  </footer>
-  <section class="modal_window hidden">
+    </footer>
+  </div>
+  <section class="modal_window ">
     <h2 class="hidden">Окно поиска отеля</h2>
-    <button class="brown button" type="button">
-      Поиск гостиницы в Седоне
-    </button>
     <form action="#" method="get">
       <fieldset class="modal_form">
         <p>
@@ -79,7 +82,7 @@
             <img src="img/calendar.png" alt="Кнопка,открывающая календарное окно">
           </button>
         </p>
-        <p>
+        <p>   
           <label for="departure_data_form">Дата выезда:</label>
           <input type="date" name="departure_data" id="departure_data_form">
           <button type="button" class="button calendar">
@@ -105,15 +108,12 @@
           </button>
         </p>
         <p>
-          <button class="blue button" type="submit">
-            Найти
+          <button class="blue button search_button" type="submit">
+            НАЙТИ
           </button>
         </p>
       </fieldset>
     </form>
-    <button class="modal_close" type="button">
-      Закрыть
-    </button>
   </section>
   </body>
 </html>

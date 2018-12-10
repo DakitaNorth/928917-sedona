@@ -1,7 +1,17 @@
-.hidden {
-   display: none;
+.hidden:not(:focus):not(:active),
+input[type="checkbox"].hidden,
+input[type="radio"].hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
 
 body {
   margin: 0;
@@ -15,27 +25,41 @@ body {
   list-style: none;
   text-decoration: none;
 
-  background-color:#ffffff;
+  background-color:#f2f2f2;
 }
-
 
 a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .site_navigation {
   font-size: 14px;
   line-height: 26px;
   font-weight:700;
   color:#000000;
-}
-.site_navigation {
   list-style: none;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
 }
+
 .site_navigation a {
   color: #000000;
+  display:inline-block;
+  padding-top:12px;
+  padding-left:72px;
+  padding-right:72px;
 }
+
+.site_navigation li:nth-child(2)  {
+  padding-right:268px;
+}
+
 .site_navigation a:hover,
 .site_navigation a:focus {
   color: #81b3d2;
@@ -100,7 +124,7 @@ a {
   text-align: center;
 }
 
-.footer_social ul {
+.footer_social  {
   list-style: none;
 }
 
@@ -143,8 +167,8 @@ a {
   text-align:center;
 }
 
-.interesting b {
-  font-size:21px;
+.interesting h2 {
+  font-size:30px;
   color:333333;
 }
 
@@ -179,12 +203,10 @@ a {
   width: 1200px;
   margin: 0 auto;
   background-color:#ffffff;
-  box-shadow: 0 -5px 9px 2px;
+  box-shadow: 0 -5px 9px 2px #dbdbdb;
 }
 
 .main_navigation {
-  display:flex;
-  flex-direction:row;
   min-height:56px;
 }
 
@@ -192,39 +214,57 @@ a {
   width:140px;
   min-height:72px;
   align-self:flex-start;
-  order:2;
-  margin-left:36.2%;
-  margin-right:auto;
+  left:45.9%;
+  right:55.1%;
+  position:absolute;
+
 }
 
 .site_navigation {
   margin: 0;
   padding: 0;
   list-style: none;
-  order:1;
 }
 
 .main_footer {
   display:flex;
   flex-direction:row;
-  justify-content:space-around;
+  justify-content:space-between;
   min-height:120px;
-  width:100%;
 }
 
 .footer_hashtag {
+  margin-left:72px;
   width:240px;
   align-self:center;
 }
 
 .footer_copyright {
+  margin-right:72px;
   width:240px;
   align-self:center;
 }
 
 .footer_social {
   width:400px;
-  align-self:center;
+  margin-top:35px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+}
+
+.social_button {
+  display:inline-block;
+  width:40px;
+  height:40px;
+  margin-right:10px;
+  vertical-align: middle;
+  background-color:black;
+}
+
+.icon-twitter {
+  background-image:url("img/twitter.png");
+  background-repeat:no-repeat;
 }
 /*Общие теги*/
 
@@ -271,6 +311,8 @@ a {
   width:569px;
   min-height:86px;
   align-self:center;
+  font-size:21px;
+  font-weight:700;
 }
 
 .result {
@@ -278,16 +320,11 @@ a {
   min-height:150px;
   display:flex;
   flex-direction:row;
-  border-top:1px solid gray;
-  border-bottom:1px solid gray;
+  border-top:1px solid #e5e5e5;
+  border-bottom:1px solid #e5e5e5;
   padding-left:72px;
   padding-right:72px;
   flex-wrap:wrap;
-}
-
-.other_page .header_main_logo_flex {
-  order:2;
-  margin-left:33.2%;
 }
 
 .hotel_img {
@@ -357,4 +394,19 @@ a {
 
 .rating p {
   margin-bottom:30px;
+}
+
+.search_button {
+  min-height:58px;
+  text-align:center;
+  vertical-align:middle;
+  padding-right:160px;
+  padding-left:160px;
+  font-size:21px;
+  font-weight:700;
+}
+
+.modal_window {
+  position:absolute;
+
 }
