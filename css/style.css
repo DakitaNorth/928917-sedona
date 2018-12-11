@@ -51,9 +51,9 @@ img {
 .site_navigation a {
   color: #000000;
   display:inline-block;
-  padding-top:12px;
-  padding-left:72px;
-  padding-right:72px;
+  margin-top:12px;
+  margin-left:72px;
+  margin-right:72px;
 }
 
 .site_navigation li:nth-child(2)  {
@@ -213,9 +213,8 @@ img {
 .header_main_logo {
   width:140px;
   min-height:72px;
-  align-self:flex-start;
-  left:45.9%;
-  right:55.1%;
+  left:50%;
+  margin-left:-70px;
   position:absolute;
 
 }
@@ -227,51 +226,66 @@ img {
 }
 
 .main_footer {
+  min-height:120px;
   display:flex;
   flex-direction:row;
+  flex-wrap:nowrap;
+  align-items:center;
   justify-content:space-between;
-  min-height:120px;
 }
 
 .footer_hashtag {
-  margin-left:72px;
   width:240px;
-  align-self:center;
+  text-align:center;
+  margin-left:72px;
 }
 
 .footer_copyright {
-  margin-right:72px;
   width:240px;
-  align-self:center;
+  text-align:center;
+  margin-right:72px;
 }
 
 .footer_social {
   width:400px;
-  margin-top:35px;
-  display:flex;
-  flex-direction:row;
-  flex-wrap:nowrap;
+  text-align:center;
+
 }
 
 .social_button {
   display:inline-block;
-  width:40px;
-  height:40px;
-  margin-right:10px;
-  vertical-align: middle;
-  background-color:black;
+  width:46px;
+  height:48px;
+  margin-right:6px;
+  background-color:#81b3d2;
 }
 
 .icon-twitter {
-  background-image:url("img/twitter.png");
+  background-image:url("../img/twitter.svg");
   background-repeat:no-repeat;
+  background-size:17px 15px;
+  background-position:50% 50%;
+}
+
+.icon-facebook {
+  background-image:url("../img/facebook.svg");
+  background-repeat:no-repeat;
+  background-size:12px 23px;
+  background-position:50% 50%;
+}
+
+.icon-youtube {
+  background-image:url("../img/youtube.svg");
+  background-repeat:no-repeat;
+  background-size:20px 16px;
+  background-position:50% 50%;
 }
 /*Общие теги*/
 
 
 .welcome {
   background-color:grey;
-  background-image:url("img/polygon.jpg");
+  background-image:url("../img/polygon.jpg");
   background-repeat:no-repeat;
   background-position:center;
   width:100%;
@@ -313,6 +327,7 @@ img {
   align-self:center;
   font-size:21px;
   font-weight:700;
+  text-transform:uppercase;
 }
 
 .result {
@@ -337,7 +352,6 @@ img {
   flex-direction:column;
   flex-wrap:wrap;
   min-height:150px;
-  width:393px;
   margin-top:28px;
   margin-left:30px;
 }
@@ -345,6 +359,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size:21px;
 }
 
 .buttons_detail {
@@ -404,9 +419,5 @@ img {
   padding-left:160px;
   font-size:21px;
   font-weight:700;
-}
-
-.modal_window {
-  position:absolute;
-
+  text-transform:uppercase;
 }
