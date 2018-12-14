@@ -461,12 +461,14 @@ img {
   text-align:center;
   padding:0;
   min-height:38px;
+  vertical-align:middle;
 }
 
 .modal_form #child_form {
   width:38px;
   text-align:center;
   padding:0;
+  vertical-align:middle;
 }
 
 .calendar svg {
@@ -498,10 +500,6 @@ img {
 .grownup_minus {
   margin:0;
   padding:0;
-  background-color:#f2f2f2;
-  min-height:40px;
-  width:38px;
-  display:inline-block;
   margin-right:-4px;
   margin-left:37px;
 }
@@ -509,10 +507,6 @@ img {
 .grownup_plus {
   margin:0;
   padding:0;
-  background-color:#f2f2f2;
-  min-height:40px;
-  width:38px;
-  display:inline-block;
   margin-left: -4px;
   margin-right:43px;
 }
@@ -520,10 +514,6 @@ img {
 .child_minus {
   margin:0;
   padding:0;
-  background-color:#f2f2f2;
-  min-height:40px;
-  width:38px;
-  display:inline-block;
   margin-right:-4px;
   margin-left:27px;
 }
@@ -531,9 +521,26 @@ img {
 .child_plus {
   margin:0;
   padding:0;
+  margin-left: -4px;
+}
+
+.modal_button {
   background-color:#f2f2f2;
   min-height:40px;
   width:38px;
   display:inline-block;
-  margin-left: -4px;
+  color:#a9a9a9;
+  font-size:23px;
+  vertical-align:middle;
+}
+
+.modal_button:hover,
+.modal_button:focus {
+  background-color:#ebebeb;
+  color:black;
+}
+
+.modal_button:active {
+  background-color:white;
+  color:#81b3d2;
 }
