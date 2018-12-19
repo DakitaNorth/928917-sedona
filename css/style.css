@@ -412,8 +412,11 @@ img {
 }
 
 .rating_star {
-  margin-top:29px;
+  margin-top:30px;
   margin-bottom:20px;
+  width:90px;
+  height:17px;
+  text-align:right;
 }
 
 .rating p {
@@ -434,7 +437,7 @@ img {
 }
 
 .modal_window {
-  background-color:white;
+  background-color:red;
   width:569px;
   min-height:395px;
   position:absolute;
@@ -457,10 +460,10 @@ img {
   margin:0;
   margin-bottom:23px;
   min-height:38px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
 }
 
 .modal_form p:nth-child(2) {
@@ -479,6 +482,14 @@ img {
   border-style:solid;
   border-color:#f2f2f2;
   outline:none;
+}
+
+.modal_form #arrival_data_form {
+  margin-left:20px;
+}
+
+.modal_form #departure_data_form {
+  margin-left:16px;
 }
 
 .modal_form input:hover {
