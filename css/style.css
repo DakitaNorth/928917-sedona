@@ -137,8 +137,8 @@ img {
 
 .footer_social {
   list-style:none;
-  width:400px;
   text-align:center;
+  padding-right:10px;
 }
 
 .social_button {
@@ -321,10 +321,15 @@ img {
   flex-wrap:wrap;
 }
 
-.map img {
+.map_image {
   width:100%;
-  min-height:472px;
+  height:595px;
+  background-image:url("../img/map.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
+
+
 .map a {
   width:569px;
   min-height:56px;
@@ -427,6 +432,30 @@ img {
 
 
 /*Модальное окно*/
+@keyframes rotate {
+  0% {
+    transform:rotate(360deg) scale(0);
+  }
+  70% {
+    transform:rotate(30deg) scale(0.5);
+  }
+  90% {
+    transform:rotate(-10deg) scale(0.3);
+  }
+  100% {
+    transform:rotate(0deg) scale(1);
+  }
+}
+
+.modal_show {
+  display:block;
+  animation:rotate 1.2s;
+}
+
+.modal_close {
+  display:none;
+}
+
 .search_button {
   min-height:58px;
   width:458px;
@@ -437,7 +466,7 @@ img {
 }
 
 .modal_window {
-  background-color:red;
+  background-color:white;
   width:569px;
   min-height:395px;
   position:absolute;

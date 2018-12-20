@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
   </head>
   <body class="main_page">
   <div class="container">
@@ -41,10 +42,13 @@
         </p>
       </section>
       <section class="map">
-        <a href="#" class="brown button">
+        <a href="#" class="brown button close_open_button">
           Поиск гостиницы в Седоне
         </a>
-        <img src="img/map.jpg" alt="Карта,с отметкой местонахождения Седоны" width="100%" min-height="472px">
+        <div class="map_image" aria-label="Карта,с отметкой местонахождения Седоны">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d836633.2214480959!2d-111.6685898161538!3d35.00943502382285!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1545236852303" width="100%" height="595px" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
+        </div>
       </section>
     </main>
     <footer class="main_footer">
@@ -102,7 +106,7 @@
       </div>
     </footer>
   </div>
-  <section class="modal_window ">
+  <section class="modal_window modal_close">
     <h2 class="hidden">Окно поиска отеля</h2>
     <form class="modal_form" action="#" method="get">
         <p>
@@ -181,5 +185,6 @@
         </div>
     </form>
   </section>
+  <script src="js/script.js"></script>
   </body>
 </html>
