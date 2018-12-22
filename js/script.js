@@ -9,12 +9,7 @@ var search = popup.querySelector(".search_button");
 
 link.addEventListener("click",function(evt) {
     evt.preventDefault();
-    if (popup.classList.contains("modal_close")) {
-      popup.classList.toggle("modal_close");
-    }
-    else {
-      popup.classList.toggle("modal_close");
-    }
+    popup.classList.toggle("modal_close");
 });
 
 search.addEventListener("click", function (evt) {
@@ -23,5 +18,11 @@ search.addEventListener("click", function (evt) {
       search.classList.remove("search_button_shake");
       search.offsetWidth = search.offsetWidth;
       search.classList.add("search_button_shake");
+    }
+    else {
+      localStorage.setItem("arrival_data",arrival_data.value);
+      localStorage.setItem("arrival_data",departure_data.value);
+      localStorage.setItem("grownup",grownup_form.value);
+      localStorage.setItem("child",child_form.value);
     }
   });
