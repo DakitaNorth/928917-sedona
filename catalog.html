@@ -24,7 +24,88 @@
     </header>
     <main class="main_info">
       <h1 class="hidden">#</h1>
-      <!--Здесь будет форма-->
+      <section class="filter">
+        <form class="filter" method="get" action="#">
+          <fieldset class="filter_infrastructure">
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter_option">
+                <input class="hidden filter_input_checkbox" type="checkbox" name="checkbox_pool" id="checkbox_pool" checked>
+                <label for="checkbox_pool">Бассейн</label>
+              </li>
+              <li class="filter_option">
+                <input class="hidden filter_input_checkbox" type="checkbox" name="checkbox_parking" id="checkbox_parking">
+                <label for="checkbox_parking">Парковка</label>
+              </li>
+              <li class="filter_option">
+                <input class="hidden filter_input_checkbox" type="checkbox" name="checkbox_wifi" id="checkbox_wifi">
+                <label for="checkbox_wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter_housing">
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter_option">
+                <input class="hidden filter_input_checkbox" type="checkbox" name="checkbox_hotel" id="checkbox_hotel" checked>
+                <label for="checkbox_hotel">Гостиница</label>
+              </li>
+              <li class="filter_option">
+                <input class="hidden filter_input_checkbox" type="checkbox" name="checkbox_Motel" id="checkbox_Motel" checked>
+                <label for="checkbox_Motel">Мотель</label>
+              </li>
+              <li class="filter_option">
+                <input class="hidden filter_input_checkbox" type="checkbox" name="checkbox_apartment" id="checkbox_apartment" checked>
+                <label for="checkbox_apartment">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="filter_range">
+              <p class="filter_title">Стоимость в сутки (Р):</p>
+              <div class="price_control">
+                <label class="min_price">от
+                  <input type="text" name="min_price" value="0">
+                </label>
+                <label class="max_price">до
+                  <input type="text" name="max_price" value="3000">
+                </label>
+              </div>
+              <div class="range_control">
+                <div class="scale">
+                  <div class="bar"></div>
+                  <div class="range_toggle range_min"></div>
+                  <div class="range_toggle range_max"></div>
+                </div>
+              </div>
+              <button class="show_button" type="submit">Показать</button>
+          </div>
+        </form>
+      </section>
+      <section class="search_result">
+        <div class="sorting">
+          <span>Найдено: 3</span>
+        </div>
+        <div class="sorting_way">
+          <span>Сортировка:</span>
+          <ul class="ways">
+            <li class="active_way"><a>По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
+        </div>
+        <div class="sorting_buttons">
+          <button class="min-max_button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path d="M5.5 10L0 0h11"/>
+            </svg>
+          </button>
+          <button class="max-min_button active_button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path d="M5.5 10L0 0h11"/>
+            </svg>
+          </button>
+        </div>
+      </section>
       <article class="result">
         <div class="hotel_img">
           <img src="img/pic-1.jpg" alt="Отель ,,AMARA RESORT & SPA,," width="136" height="90" >
