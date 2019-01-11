@@ -9,7 +9,7 @@ var search = popup.querySelector(".search_button");
 
 link.addEventListener("click",function(evt) {
     evt.preventDefault();
-    popup.classList.toggle("modal_close");
+    popup.classList.toggle("modal_open");
 });
 
 search.addEventListener("click", function (evt) {

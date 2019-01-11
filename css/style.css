@@ -45,35 +45,42 @@ img {
   list-style: none;
   display:flex;
   flex-direction:row;
-  flex-wrap:nowrap;
+  flex-wrap:wrap;
   justify-content:space-between;
+  padding: 0;
+  list-style: none;
+  margin-top:0px;
 }
 
 .site_navigation a {
   color: #000000;
   display:inline-block;
+  vertical-align:center;
   margin-top:13px;
+  width:98px;
 }
 
-.site_navigation li:first-child {
+.site_navigation {
   margin-left:72px;
+  margin-right:72px;
+  min-height:42px;
 }
 
-.site_navigation li:last-child {
-  margin-right:72px;
+.option_left a{
+  text-align:left;
+}
+
+.option_right a {
+  text-align:right;
 }
 
 .site_navigation li:nth-child(2)  {
-  padding-left:145px;
-  padding-right:383px;
+  margin-left:142px;
+  margin-right:373px;
 }
 
 .site_navigation li:nth-child(3)  {
-  padding-right:160px;
-}
-
-.site_navigation li:first-child {
-  margin-left:72px;
+  margin-right:147px;
 }
 
 .site_navigation a:hover,
@@ -229,7 +236,7 @@ img {
   fill:#88b6d1;
 }
 
-.other_page .site_navigation_active a {
+.other_page_site_navigation_active a {
   color:#766357;
 }
 
@@ -249,10 +256,6 @@ img {
   box-shadow: 0 -5px 9px 2px #dbdbdb;
 }
 
-.main_navigation {
-  min-height:56px;
-}
-
 .header_main_logo {
   width:140px;
   min-height:72px;
@@ -261,13 +264,6 @@ img {
   position:absolute;
 
 }
-
-.site_navigation {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 
 /*Стиилизация основного содержимого главной страницы*/
 .welcome {
@@ -311,7 +307,7 @@ img {
   width:100%;
   display:flex;
   flex-direction:row;
-  flex-wrap:nowrap;
+  flex-wrap:wrap;
 }
 
 .reason {
@@ -332,6 +328,40 @@ img {
   margin-bottom:5px;
 }
 
+.white_reason h2 {
+  width:200px;
+  margin-left:100px;
+}
+
+.second_color h2 {
+  width:150px;
+  margin-left:125px;
+}
+
+.centering {
+  width:300px;
+  margin-left:50px;
+}
+
+.devils_bridge_centering {
+  width:310px;
+  margin-left:45px;
+}
+
+.small_area p {
+  width:250px;
+  margin-left:75px;
+}
+
+.few_tourists p {
+  width:250px;
+  margin-left:75px;
+}
+
+.beautiful_highway p {
+  width:270px;
+  margin-left:65px;
+}
 .reason p {
   line-height:20px;
 }
@@ -344,9 +374,8 @@ img {
 }
 
 .without_number {
-  min-height:205px;
+  min-height:272px;
   padding-top:58px;
-  padding-bottom:67px;
 }
 
 .without_number h2 {
@@ -359,6 +388,10 @@ img {
   background-color:#eeeeee;
   padding-top:50px;
   min-height: 206px;
+}
+
+.souvenir {
+  padding-top:48px;
 }
 
 .interesting {
@@ -385,7 +418,6 @@ img {
   background-repeat: no-repeat;
 }
 
-
 .map a {
   width:569px;
   min-height:56px;
@@ -401,7 +433,7 @@ img {
 .filter {
   width:100%;
   min-height:217px;
-  background-color:black;
+  background-color:#2b3c44;
   background-image:url("../img/polygon2.0.jpg");
   color:#ffffff;
   text-transform:uppercase;
@@ -434,20 +466,12 @@ img {
   padding-left:0px;
 }
 
-.filter_infrastructure li label {
-  margin-left:42px;
-}
-
-.filter_infrastructure li {
+.filter_option {
   margin-bottom:20px;
 }
 
-.filter_housing li label {
+.filter_option label {
   margin-left:42px;
-}
-
-.filter_housing li {
-  margin-bottom:20px;
 }
 
 .filter_housing {
@@ -457,6 +481,7 @@ img {
 .filter_option label {
   position:relative;
   display:inline-block;
+  vertical-align:center;
   cursor:pointer;
   user-select:none;
 }
@@ -483,9 +508,19 @@ img {
   top:2px;
 }
 
+.filter_option input[type="checkbox"]:disabled + label::before {
+  background-image:url("../img/checkbox-block.svg");
+  background-repeat:no-repeat;
+}
+
+.filter_option input[type="checkbox"]:disabled:checked + label::after {
+  background-image:url("../img/checkbox-checked-block.svg");
+  background-repeat:no-repeat;
+}
+
 /*результаты поиска и сортировка*/
 .search_result {
-  padding:29px 0px 30px 72px;
+  padding:29px 73px 30px 72px;
   display:flex;
   flex-direction:row;
 }
@@ -499,15 +534,16 @@ img {
 .sorting_way {
   display:flex;
   flex-direction:row;
+  flex-wrap:wrap;
   padding-top:8px;
   margin-left:48px;
-  margin-right:504px;
 }
 
-.sorting_way span {
+.sorting_way h2 {
   font-weight:600;
   font-size:12px;
   line-height:18px;
+  margin:0;
 }
 
 .sorting_way ul {
@@ -557,32 +593,34 @@ img {
   margin-left:33px;
 }
 
-.sorting_buttons button {
+.sorting_buttons a {
   border:none;
   background-color:rgba(0,0,0,0);
   padding:0;
   margin-top:7px;
 }
 
-.min-max_button {
+.min-max_button svg {
   margin-right:8px;
   transform:rotate(180deg);
-}
-
-.sorting_buttons {
   fill:#cacaca;
 }
 
-.sorting_buttons .active_button {
+.sorting_buttons {
+  flex:2;
+  text-align:right;
+}
+
+.active_button svg {
   fill:#81b3d2;
 }
 
-.sorting_buttons button:hover,
-.sorting_buttons button:focus {
+.min_max_buttons svg:hover,
+.min_max_buttons svg:focus {
   fill:#231f20;
 }
 
-.sorting_buttons button:active {
+.min_max_buttons svg:active {
   fill:#81b3d2;
 }
 
@@ -618,6 +656,7 @@ img {
 
 .price_control label {
   display:inline-block;
+  vertical-align:center;
   font-size:14px;
   line-height:21px;
   cursor:pointer;
@@ -720,7 +759,7 @@ img {
 }
 
 .hotel_img {
-  width:136;
+  width:136px;
   height:90px;
   padding-top:30px;
   padding-bottom:30px;
@@ -738,7 +777,7 @@ img {
 .hotel_name h2 {
   margin:0;
   padding:0;
-  list-style: none;
+  list-style:none;
   font-size:21px;
 }
 
@@ -746,7 +785,6 @@ img {
   display:flex;
   flex-direction:row;
   flex-wrap:nowrap;
-  align-items:flex-end;
   margin-top:3px;
 }
 
@@ -856,6 +894,10 @@ img {
   display:none;
 }
 
+.modal_open {
+  display:block;
+}
+
 .search_button {
   min-height:58px;
   width:458px;
@@ -880,7 +922,7 @@ img {
 }
 
 .modal_form {
-  padding:55px 55px;
+  padding:52px 55px;
   display:flex;
   flex-direction:column;
   flex-wrap:nowrap;
@@ -899,7 +941,7 @@ img {
 }
 
 .modal_form p:nth-child(2) {
-  margin-bottom:29px;
+  margin-bottom:25px;
 }
 
 .modal_form p:nth-child(3) {
@@ -910,30 +952,30 @@ img {
   min-height:38px;
   padding-left:12px;
   background-color:#f2f2f2;
-  border:1px;
+  border:2px;
   border-style:solid;
   border-color:#f2f2f2;
   outline:none;
 }
 
-.modal_form #arrival_data_form {
+.modal_form .arrival_data_form {
   margin-left:20px;
 }
 
-.modal_form #departure_data_form {
+.modal_form .departure_data_form {
   margin-left:16px;
 }
 
 .modal_form input:hover {
   background-color:#ebebeb;
-  border:1px;
+  border:2px;
   border-style:solid;
   border-color:#ebebeb;
 }
 
 .modal_form input:focus {
   background-color:#ffffff;
-  border:1px;
+  border:2px;
   border-style:solid;
   border-color:#ebebeb;
 }
@@ -944,19 +986,49 @@ img {
   font-weight:700;
 }
 
-.modal_form #grownup_form {
+.modal_form .grownup_form {
   width:38px;
   text-align:center;
   padding:0;
   min-height:38px;
   vertical-align:middle;
+  position:relative;
 }
 
-.modal_form #child_form {
+.modal_form .child_form {
   width:38px;
   text-align:center;
   padding:0;
   vertical-align:middle;
+  position:relative;
+}
+
+.grownup_minus:before {
+  content: "_";
+  position:absolute;
+  top:185px;
+  left:180px;
+}
+
+.grownup_plus:before {
+  content: "+";
+  position:absolute;
+  top:197px;
+  left:258px;
+}
+
+.child_minus:before {
+  content: "_";
+  position:absolute;
+  top:185px;
+  right:145px;
+}
+
+.child_plus:before {
+  content: "+";
+  position:absolute;
+  top:197px;
+  right:67px;
 }
 
 .calendar svg {
